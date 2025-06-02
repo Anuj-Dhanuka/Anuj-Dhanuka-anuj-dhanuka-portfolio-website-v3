@@ -1,8 +1,7 @@
----
 deployment:
   tasks:
     - export APP_DIR=/home/aimagics/public_html/anujdhanuka.aimagicsuite.com
     - cd $APP_DIR
-    - /opt/cpanel/ea-nodejs20/bin/npm install --production
+    - /opt/cpanel/ea-nodejs20/bin/npm install --legacy-peer-deps --production
     - /opt/cpanel/ea-nodejs20/bin/npm run build
     - /usr/local/cpanel/scripts/restartsrv_httpd
