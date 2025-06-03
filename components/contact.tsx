@@ -183,9 +183,10 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
+            className="pointer-events-auto"
           >
             <form
-              className="space-y-4 sm:space-y-6 bg-white dark:bg-gray-900 p-4 sm:p-6 rounded-xl shadow-sm"
+              className="space-y-4 sm:space-y-6 bg-white dark:bg-gray-900 p-4 sm:p-6 rounded-xl shadow-sm relative z-10 interactive-high"
               onSubmit={handleSubmit}
             >
               <div className="space-y-1 sm:space-y-2">
@@ -198,7 +199,7 @@ export function Contact() {
                   value={formState.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
-                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors"
+                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors pointer-events-auto interactive"
                   required
                 />
               </div>
@@ -214,7 +215,7 @@ export function Contact() {
                   onChange={handleChange}
                   type="tel"
                   placeholder="+1 (123) 456-7890"
-                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors"
+                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors pointer-events-auto interactive"
                   required
                 />
               </div>
@@ -230,7 +231,7 @@ export function Contact() {
                   onChange={handleChange}
                   type="email"
                   placeholder="you@example.com"
-                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors"
+                  className="border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors pointer-events-auto interactive"
                   required
                 />
               </div>
@@ -245,7 +246,7 @@ export function Contact() {
                   value={formState.message}
                   onChange={handleChange}
                   placeholder="How can I help you?"
-                  className="min-h-[100px] sm:min-h-[120px] border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors"
+                  className="min-h-[100px] sm:min-h-[120px] border-gray-300 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500 transition-colors pointer-events-auto interactive"
                   required
                 />
               </div>
@@ -261,7 +262,7 @@ export function Contact() {
                     className={`ml-2 h-4 w-4 ${isSubmitting ? "animate-pulse" : "group-hover:translate-x-1 transition-transform"}`}
                   />
                 </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></span>
               </Button>
 
               {submitSuccess && (

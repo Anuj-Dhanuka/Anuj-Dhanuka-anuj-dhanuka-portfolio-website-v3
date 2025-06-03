@@ -68,19 +68,19 @@ export function FAQ() {
 
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="bg-white dark:bg-gray-900 rounded-xl shadow-md"
+            className="bg-white dark:bg-gray-900 rounded-xl shadow-md relative z-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion type="single" collapsible className="w-full pointer-events-auto">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left px-6 hover:no-underline hover:text-purple-600 dark:hover:text-purple-400 font-medium">
+                <AccordionItem key={index} value={`item-${index}`} className="pointer-events-auto">
+                  <AccordionTrigger className="text-left px-6 hover:no-underline hover:text-purple-600 dark:hover:text-purple-400 font-medium pointer-events-auto">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-4 text-gray-600 dark:text-gray-300">
+                  <AccordionContent className="px-6 pb-4 text-gray-600 dark:text-gray-300 pointer-events-auto">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
