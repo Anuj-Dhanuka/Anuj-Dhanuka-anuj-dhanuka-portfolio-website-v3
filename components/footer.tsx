@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import { Instagram } from "lucide-react"
 import { smoothScroll } from "@/utils/smooth-scroll"
 
 export function Footer() {
@@ -24,7 +25,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4 mt-6">
               <Link
-                href="https://github.com/anujd64"
+                href="https://github.com/Anuj-Dhanuka"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors hover:scale-110 transform"
@@ -44,14 +45,14 @@ export function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="https://twitter.com/anuj_dhanuka"
+                href="https://www.instagram.com/anuj_dhanuka/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors hover:scale-110 transform"
-                aria-label="Twitter profile"
+                aria-label="Instagram profile"
               >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </Link>
             </div>
           </div>
