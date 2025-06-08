@@ -126,7 +126,7 @@ export function Hero() {
                   </Button>
                 </Link>
 
-                <a
+             <a
               href="/ANUJ_DHANUKA_RESUME.pdf"
               download
               target="_blank"
@@ -135,7 +135,6 @@ export function Hero() {
                 <Button
                   variant="outline"
                   className="w-full sm:w-auto border-2 border-purple-300 text-white hover:bg-purple-700 hover:border-purple-300 px-4 sm:px-6 py-2 h-10 sm:h-12 rounded-lg group hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm sm:text-base font-medium bg-purple-900/30"
-                  onClick={() => window.open("/resume.pdf", "_blank")}
                   aria-label="Download resume"
                 >
                   <Download className="mr-2 h-4 w-4 group-hover:translate-y-[-2px] transition-transform" /> Download
