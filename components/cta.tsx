@@ -68,12 +68,21 @@ export function CTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:anujd973@gmail.com">
             <Button
               size="lg"
               className="bg-white text-purple-900 hover:bg-gray-100 text-base px-5 py-2 h-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
-              <Mail className="mr-2 h-5 w-5" /> Contact Me
-            </Button>
+                <Mail className="mr-2 h-5 w-5" /> Contact Me
+              </Button>
+            </a>
+
+            <a
+              href="/ANUJ_DHANUKA_RESUME.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <Button
               size="lg"
               variant="outline"
@@ -81,6 +90,7 @@ export function CTA() {
             >
               <Download className="mr-2 h-5 w-5" /> Download Resume
             </Button>
+            </a>
           </div>
         </motion.div>
       </div>

@@ -48,7 +48,7 @@ export function About() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         {/* Subtle background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-100/30 to-pink-100/30 dark:from-purple-900/10 dark:to-pink-900/10 rounded-3xl blur-3xl z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-100/30 to-pink-100/30 dark:from-purple-900/10 dark:to-pink-900/10 rounded-3xl blur-3xl z-0 pointer-events-none"></div>
 
         <motion.div
           className="text-center max-w-3xl mx-auto mb-12"

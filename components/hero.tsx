@@ -126,6 +126,12 @@ export function Hero() {
                   </Button>
                 </Link>
 
+                <a
+              href="/ANUJ_DHANUKA_RESUME.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
                 <Button
                   variant="outline"
                   className="w-full sm:w-auto border-2 border-purple-300 text-white hover:bg-purple-700 hover:border-purple-300 px-4 sm:px-6 py-2 h-10 sm:h-12 rounded-lg group hover:shadow-lg hover:scale-105 transition-all duration-300 text-sm sm:text-base font-medium bg-purple-900/30"
@@ -135,15 +141,16 @@ export function Hero() {
                   <Download className="mr-2 h-4 w-4 group-hover:translate-y-[-2px] transition-transform" /> Download
                   Resume
                 </Button>
+                </a>
 
-                <Button
+                {/* <Button
                   variant="ghost"
                   className="w-full sm:w-auto text-pink-300 hover:bg-pink-900/50 px-4 sm:px-6 py-2 h-10 sm:h-12 rounded-lg group hover:shadow-lg transition-all duration-300 text-sm sm:text-base font-medium"
                   onClick={() => setShowBookingModal(true)}
                   aria-label="Schedule a call"
                 >
                   <Calendar className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" /> Schedule a Call
-                </Button>
+                </Button> */}
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
